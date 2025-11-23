@@ -8,7 +8,6 @@ const PAGE_LIMIT = 20;
 
 const Poke = () => {
   const [pokemonList, setPokemonList] = useState([]);
-
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [selectedPokemon, setSelectedPokemon] = useState(null);
@@ -48,7 +47,7 @@ const Poke = () => {
 
   return (
     <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
-      <h1>Pokémon Explorer</h1>
+      <h1>Pokémon Table</h1>
 
       {error && <p style={{ color: "red" }}>Error loading list: {error}</p>}
 
